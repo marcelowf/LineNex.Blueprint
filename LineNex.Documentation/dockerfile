@@ -1,0 +1,7 @@
+FROM node:latest
+COPY documentation /documentation
+WORKDIR /documentation
+RUN npm install -g docsify-cli@latest
+EXPOSE 3000/tcp
+RUN docsify init ../documentation
+ENTRYPOINT docsify serve .

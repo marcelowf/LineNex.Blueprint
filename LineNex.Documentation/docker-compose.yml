@@ -1,0 +1,14 @@
+services:
+  docsify:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./documentation:/documentation
+    restart: unless-stopped
+
+# $env:DOCKER_BUILDKIT=0
+# docker-compose build
+# docker-compose up

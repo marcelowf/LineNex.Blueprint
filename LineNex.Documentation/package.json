@@ -1,0 +1,21 @@
+{
+  "name": "test-automation-self-academy",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "docsify serve docs",
+    "test": "npx playwright test --project chromium",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "docsify": "^4.13.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.2"
+  },
+  "keywords": [],
+  "dependencies": {
+    "playwright": "^1.48.1",
+    "docsify": "^4.13.0"
+  }
+}

@@ -1,0 +1,18 @@
+.centerManual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerManual>img {
+    box-shadow: none !important;
+}
+
+.imageswithdarktext {
+    -webkit-filter: drop-shadow(3px 1px 5px #e7e4e4);
+}
+
+.dropdownbox:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+name: LineNex-Blueprint
+
+trigger:
+  branches:
+    include:
+      - main
+
+resources:
+  pipelines:
+    - pipeline: continuous-provisioning
+      source: LineNex-Terraform
+      trigger: true
+
+variables:
+  - group: linenex-qa
+
+jobs:
+  - job: deploy_static_web_app
+    displayName: Deploy Static Web App
+    pool:
+      vmImage: ubuntu-latest
+
+    steps:
+      - checkout: self
+
+      - task: AzureStaticWebApp@0
+        inputs:
+          azure_static_web_apps_api_token: $(static_web_app_token)
+          app_location: "LineNex.Documentation/documentation"
+          api_location: ""
+          output_location: ""

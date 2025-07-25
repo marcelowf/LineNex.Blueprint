@@ -1,0 +1,41 @@
+body[data-theme="dark"] .team-name-form {
+  margin-left: 0%;
+  background-color: #1F282D;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+body[data-theme="dark"] .sidebar {
+  background-color: #1F282D;
+}
+
+body[data-theme="dark"] .highlight {
+  background-color: #1F282D;
+}
+
+body[data-theme="dark"] .app-name-link {
+  color: white;
+}
+
+#dark-mode-btn:hover {
+  background-color: #555;
+}
+
+p.tip {
+  border-left-color: #4D4D4D;
+}
+
+p.tip:before {
+  content: "!";
+  background-color: #4D4D4D;
+}
+
+#sidebar-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
